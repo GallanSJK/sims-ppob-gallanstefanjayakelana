@@ -1,4 +1,4 @@
-<header class="mx-5 my-5">
+<header class="mx-4 my-4">
     <div class="container">
         <div class="row mx-2">
             <div class="col-md-4">
