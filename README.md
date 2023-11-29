@@ -1,59 +1,42 @@
-# CodeIgniter 4 Framework
+# SIMS PPOB - Gallan Stefan Jayakelana
 
-## What is CodeIgniter?
+**SIMS PPOB** adalah aplikasi Assignment Front End Web Programmer yang dibuat mengunakan framework Codeigniter versi 4++ dan Aplikasi **SIMS PPOB** memiliki
+beberapa fitur seperti:
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+1. Registrasi
+2. Login
+3. Lihat Profile
+4. Update Profile Data
+5. Update Profile Picture
+6. Top Up
+7. Pembayaran
+8. Riwayat Transaksi
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Dokumentasi API SIMS PPOB
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+Aplikasi SIMS PPOB integration dengan API dari SIMS PPOB sebagai berikut:
+https://api-doc-tht.nutech-integrasi.app
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+# Kebutuhan Aplikasi
 
-## Important Change with index.php
+1. Minimun PHP Version 7.4 or https://codeigniter4.github.io/userguide/intro/requirements.html
+2. Download dan Install xampp https://www.apachefriends.org/download.html
+3. Download dan Install Composer https://getcomposer.org/
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+4. Buka command prompt di dalam directory htdocs pada folder xampp lalu jalankan baris berikut:
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+```
+git clone https://github.com/GallanSJK/sims-ppob-gallanstefanjayakelana.git
+```
 
-**Please** read the user guide for a better explanation of how CI4 works!
+5. Buka command prompt di dalam directory aplikasi sims ppob lalu jalankan baris berikut:
 
-## Repository Management
+```
+composer install
+```
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+6. Jalankan Aplikasi dengan mengetik perintah berikut:
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> **Warning**
-> The end of life date for PHP 7.4 was November 28, 2022. If you are
-> still using PHP 7.4, you should upgrade immediately. The end of life date
-> for PHP 8.0 will be November 26, 2023.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+```
+php spark serve
+```
