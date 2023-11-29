@@ -16,10 +16,10 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-12 col-md-12 col-lg-6">
                 <div class="row h-100">
-                    <div class="col-sm-12 my-auto">
-                        <div class="col-6 mx-auto w-100">
+                    <div class="col-sm-12 pt-5 my-auto">
+                        <div class="col-12 col-lg-6 col-md-12 mx-auto w-100">
                             <div class="d-flex justify-content-center">
                                 <div class="media">
                                     <div class="mr-3">
@@ -49,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 background-pink">
+            <div class="col-md-6 d-none d-lg-block background-pink">
                 <div class="imgbox">
                     <img src="<?= base_url('assets/images/ilustrasi_login.png') ?>" class="center-fit" alt="Image Login">
                 </div>
