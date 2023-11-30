@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
 <div class="container">
-    <div class="mt-3 mx-3">
+    <div class="mt-3">
         <div class="col-6 mx-auto w-100">
             <div class="d-flex justify-content-center">
                 <div class="col-sm-6">
@@ -20,7 +20,7 @@
             <div class="mt-3 d-flex justify-content-center">
                 <h4><?= $session->first_name ?> <?= $session->last_name ?></h4>
             </div>
-            <div class="mt-5">
+            <div class="mt-3">
                 <form>
                     <div class="form-group">
                         <label for="email">Email</label>
@@ -35,7 +35,7 @@
                         <input type="text" class="form-control" id="nama_belakang" value="<?= $session->last_name ?>">
                     </div>
                     <button type="button" class="btn btn-block background-red text-white" onclick="validateForm()"><strong>Simpan</strong></button>
-                    <a href="<?= base_url('account') ?>" class="btn btn-block text-red background-white border-1px-red"><strong>Batalkan</strong></a>
+                    <a href="<?= base_url('account') ?>" class="btn btn-block my-3 text-red background-white border-1px-red"><strong>Batalkan</strong></a>
                 </form>
             </div>
         </div>

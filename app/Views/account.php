@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
 <div class="container">
-    <div class="mt-3 mx-3">
+    <div class="mt-3">
         <div class="col-6 mx-auto w-100">
             <div class="d-flex justify-content-center">
                 <div class="col-sm-6">
@@ -34,7 +34,7 @@
                         <input type="text" class="form-control" id="nama_belakang" value="<?= $session->last_name ?>" disabled>
                     </div>
                     <a href="<?= base_url('edit-profile') ?>" class="btn btn-block text-red background-white border-1px-red"><strong>Edit Profile</strong></a>
-                    <a href="<?= base_url('logout') ?>" class="btn btn-block mt-1 text-white background-red"><strong>Logout</strong></a>
+                    <a href="<?= base_url('logout') ?>" class="btn btn-block my-3 text-white background-red"><strong>Logout</strong></a>
                 </form>
             </div>
         </div>
