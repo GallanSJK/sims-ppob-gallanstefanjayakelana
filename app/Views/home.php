@@ -12,9 +12,11 @@
 	</div>
 	<div class="mt-4 mx-3">
 		<h6 class="text-grey"><strong>Temukan promo yang menarik</strong></h6>
-		<div class="inline_banner">
+		<div class="owl-carousel owl-theme">
 			<?php foreach($banner->data as $row){ ?>
-				<img src="<?= $row->banner_image ?>" alt="<?= $row->banner_name ?> 1">
+				<div class="item">
+					<img src="<?= $row->banner_image ?>" alt="<?= $row->banner_name ?>">
+				</div>
 			<?php } ?>
 		</div>
 	</div>

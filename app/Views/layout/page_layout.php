@@ -9,9 +9,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/styles.min.css') ?>?v=0.0.1" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="<?= base_url('assets/css/owl.carousel.min.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('assets/css/owl.theme.default.min.css') ?>" />
+
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="<?= base_url('assets/images/logo.png') ?>">
     <script src="<?= base_url('assets/js/jquery.min.js') ?>"></script>
+    <script src="<?= base_url('assets/js/owl.carousel.js') ?>"></script>
 </head>
 
 <body>
@@ -30,6 +37,28 @@
     <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        $(document).ready(function() {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:2500,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:4
+                    }
+                }
+            });
+        })
+
         var balance = "<?= $balance->data->balance ?>"
 
         function notifAlert(msg, type, title) {
