@@ -12,13 +12,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="<?= base_url('topup') ?>"><strong>Top Up</strong></a>
+                        <a class="nav-link text-dark" id="topup-tab" href="<?= base_url('topup') ?>"><strong>Top Up</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="<?= base_url('transaction') ?>"><strong>Transaction</strong></a>
+                        <a class="nav-link text-dark" id="transaction-tab" href="<?= base_url('transaction') ?>"><strong>Transaction</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="<?= base_url('account') ?>"><strong>Account</strong></a>
+                        <a class="nav-link text-dark" id="account-tab" href="<?= base_url('account') ?>"><strong>Account</strong></a>
                     </li>
                 </ul>
             </div>

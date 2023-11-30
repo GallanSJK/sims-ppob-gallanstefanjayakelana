@@ -42,6 +42,11 @@
     </div>
 
     <script>
+        $(document).ready(function () {
+            /* topup active pas diklik */
+            $("#topup-tab").addClass("active");
+        })
+
         function passingSaldo(saldo){
             $('#topup').val(saldo)
             $('#button_topup').removeClass('btn-secondary')

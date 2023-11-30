@@ -40,4 +40,11 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        /* account active pas diklik */
+        $("#account-tab").addClass("active");
+    })
+</script>
 <?= $this->endSection() ?>

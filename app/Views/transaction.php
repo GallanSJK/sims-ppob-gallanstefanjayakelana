@@ -34,6 +34,11 @@
     </div>
 
     <script>
+        $(document).ready(function () {
+            /* transaction active pas diklik */
+            $("#transaction-tab").addClass("active");
+        })
+
         var offset = 5;
 
         function addTransaction() {

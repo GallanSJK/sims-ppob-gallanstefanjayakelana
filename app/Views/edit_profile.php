@@ -43,6 +43,11 @@
 </div>
 
 <script>
+    $(document).ready(function () {
+        /* account active pas diklik */
+        $("#account-tab").addClass("active");
+    })
+
     function searchFile(){
         $('#photo_profile').click()
     }

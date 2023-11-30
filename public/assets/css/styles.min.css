@@ -75,3 +75,9 @@
 .height-auto {
     height: auto;
 }
+a.text-dark:focus, a.text-dark:hover{
+    color: red!important;
+}
+a.text-dark.active {
+    color: red!important;
+}
