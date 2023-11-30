@@ -2,6 +2,10 @@
 
 <?= $this->section('content') ?>
 
+<?php
+    date_default_timezone_set('Asia/Jakarta');
+?>
+
 <div class="container">
     <div class="mt-3 mx-3">
         <h6><strong>Semua Transaksi</strong></h6>
@@ -15,7 +19,7 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <h5 class="<?= $row->transaction_type == "PAYMENT" ? "text-red" : "text-green" ?>"><strong><?= $row->transaction_type == "PAYMENT" ? "-" : "+" ?> Rp.<?= number_format($row->total_amount) ?></strong></h5>
-                                <span class="text-grey font-size-10px"><?= date('Y-md h:i', strtotime($row->created_on)) ?> WIB</span>
+                                <span class="text-grey font-size-10px"><?= date('d-m-Y h:i', strtotime($row->created_on)) ?> WIB</span>
                             </div>
                             <div class="col-md-4">
                                 <div class="float-right">
@@ -75,7 +79,7 @@
                 var transaction_type = "<?= $row->transaction_type == "PAYMENT" ? "text-red" : "text-green" ?>"
                 var symbol_transaction = "<?= $row->transaction_type == "PAYMENT" ? "-" : "+" ?>"
                 var amount = "<?= number_format($row->total_amount) ?>"
-                var date_transaction = "<?= date('Y-m-d h:i', strtotime($row->created_on)) ?>"
+                var date_transaction = "<?= date('d-m-Y h:i', strtotime($row->created_on)) ?>"
                 var description = "<?= strtoupper($row->description) ?>"
 
                 data += `
